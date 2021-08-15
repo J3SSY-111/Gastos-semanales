@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Semanales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="divBase">
+        <header class="header" id="header">
+            <h1>Gastos Semanales</h1>
+        </header>
+        <div class="divCuerpo">
+            <form action="" class="formulario">
+                <div class="divInputText" id="divInputText">
+                    <input type="text" placeholder="Gasto" required id="gasto" class="gasto" title="Ej. Luz, Agua...">
+                </div>
+                <div class="divInputNumber" id="divInputNumber">
+                    <input type="number" placeholder="Cantidad" required id="cantidad" class="gasto" title="Cantidad pagada">
+                </div>
+                <a href="#gasto" id="enlaceBtn"><input type="button" value="Añadir" id="btnAnadir" class="btnAnadir"></a>
+            </form>
+            <div class="divDePresupuesto">
+                <p>Su presupuesto para esta semana es de: <b id="presupuesto" class="presupuesto"></b></p>
+            </div>
+            <div class="divDeRestante">
+                <p>Su restante es: <b id="restante" class="restante"></b></p>
+            </div>
+            <div class="lista" id="lista" style="visibility: hidden;">
+                <ol id="lista-gastos" class="lista-gastos">
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="gastos.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #3C5186;
+    font-weight: 600;
+    animation: opacity 1s linear;
+}
+
+p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.header {
+    padding: 60px 0 40px 0;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.692);
+}
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 40px;
+    font-weight: none;
+    color: #fff;
+}
+
+.divCuerpo {
+    margin: 60px 150px 40px 150px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px black;
+}
+
+.formulario {
+    width: 250px;
+}
+
+.divInputText {
+    padding: 15px 18px;
+    background-color: #F8F4E1;
+    border: 1px solid rgba(133, 124, 124, 0.219);
+    border-radius: 10px;
+    margin: 20px 0 20px 10px;
+}
+
+.formulario input[type=text] {
+    border: 1px solid rgba(153, 153, 153, 0.37);
+    width: 200px;
+}
+
+.divInputNumber {
+    padding: 15px 18px;
+    background-color: #F8F4E1;
+    border: 1px solid rgba(133, 124, 124, 0.219);    
+    border-radius: 10px;
+    margin: 20px 0 20px 10px;
+}
+
+.formulario input[type=number] {
+    border: 1px solid rgba(153, 153, 153, 0.37);
+    width: 200px;
+}
+
+.btnAnadir {
+    margin: 10px 100px 0 100px;
+    border: 1px solid rgba(153, 153, 153, 0.226);
+    padding: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 2px #999;
+    background-color: #3c5186d5;
+    font-weight: 500;
+    color: #fff;
+}
+
+.btnAnadir:hover {
+    border: 1px solid rgba(153, 153, 153, 0.582);
+    box-shadow: 0 2px 3px #999;
+    background-color: #3c5186c4;
+}
+
+.divDePresupuesto {
+    position: absolute;
+    right: 210px;
+    bottom: 277px;
+    background-color: #3c5186d5;
+    padding: 15px;
+    border: 1px solid rgba(133, 124, 124, 0.219);
+    border-radius: 10px;
+}
+
+.presupuesto {
+    color: #333;
+    font-size: 12px;
+    color: #7EA04D;
+}
+
+.divDeRestante {
+    position: absolute;
+    right: 210px;
+    bottom: 205px;
+    background-color: #3c5186d5;
+    padding: 15px;
+    border: 1px solid rgba(133, 124, 124, 0.219);
+    border-radius: 10px;
+}
+
+.restante {
+    font-size: 12px;
+    color: #7EA04D;
+}
+
+.restante2 {
+    font-size: 12px;
+    color: #f05454a1;
+}
+
+.restante3 {
+    font-size: 12px;
+    color: #fcf776ce;
+}
+
+.lista {
+    background-color: #fff;
+    border: 1px solid rgba(153, 153, 153, 0.459);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(153, 153, 153, 0.726);
+}
+
+.lista p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lista-gastos {
+    color: #333;
+    margin: 20px 40px;
+}
+
+.lista-gastos li {
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-indent: 5px;
+    width: 540px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.404);
+}
+
+.lista-gastos a:hover {
+    text-decoration: line-through;
+}
+
+.btnCheck {
+    opacity: .3;
+    background: #71EFA3;
+    border: none;
+    margin: 0 10px 0 380px;
+    box-shadow: 0 0 2px #333;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+@keyframes btnCheck {
+    from {
+        margin-left: 0px;
+        background-color: #71efa398;
+    }
+    to {
+        background-color: transparent;
+        color: transparent;
+        border-color: transparent;
+    }
+}
+
+.btnCheck:hover {
+    opacity: .26;
+    box-shadow: 0 0 2.5px #333;
+}
+
+.btnRemove {
+    opacity: .3;
+    background: #FF6767;
+    border: none;
+    box-shadow: 0 0 2px #333;
+    cursor: pointer;
+}
+
+@keyframes btnRemove {
+    from {
+        background-color: #ff676779;
+    }
+    to {
+        background-color: transparent;
+        color: transparent;
+        border-color: transparent;
+    }
+}
+
+.btnRemove:hover {
+    opacity: .26;
+    box-shadow: 0 0 2.5px #333;
+}
